@@ -20,7 +20,7 @@ const portfolio = () => {
           </div>
           <h3>SHOKLIN</h3>
           <div className='portfolio__item-cta'>
-          <a href="https://github.com/Lawdshev/shoklin" className='btn' target='_blank'>Github</a>
+          <a href="https://github.com/rash1234567/shoklin" className='btn' target='_blank'>Github</a>
           <a href="https://shoklin.onrender.com/" className='btn btn-primary' target='_blank'>Live
            Demo</a>
           </div>
@@ -30,33 +30,20 @@ const portfolio = () => {
           <div className='portfolio__item-image'>
           <img src='https://scontent.cdninstagram.com/v/t1.15752-9/314420721_529858645653329_7995159256338673077_n.jpg?stp=dst-jpg_s480x480&_nc_cat=107&ccb=1-7&_nc_sid=5a057b&_nc_ohc=NhFz5qoyIKwAX-6LYZb&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.cdninstagram.com&oh=03_AdQQ1pSSYlewiXN-8-5mq--0gkBJTG1joWxVxS5PKc2ADw&oe=638D4468' alt="" />
           </div>
-          <h3>A'pple</h3>
+          <h3>Apple</h3>
           <div className='portfolio__item-cta'>
-          <a href="https://github.com/Lawdshev/Apple" className='btn' target='_blank'>Github</a>
+          <a href="https://github.com/rash1234567/Apple-store.git" className='btn' target='_blank'>Github</a>
           <a href="https://majestic-gelato-78453c.netlify.app/" className='btn btn-primary' target='_blank'>Live
            Demo</a>
           </div>
         </article>
-
-        <article className='portfolio__item'>
-          <div className='portfolio__item-image'>
-          <img src='https://scontent.cdninstagram.com/v/t1.15752-9/314246352_822439575727416_1805816731859278613_n.jpg?stp=dst-jpg_s480x480&_nc_cat=102&ccb=1-7&_nc_sid=5a057b&_nc_ohc=Jygb5zlqXtsAX_7pTEk&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.cdninstagram.com&oh=03_AdQj8ljNNB9Dqo2MXqHEB7mDNwmiFgRL9FCTplIS_WkN2g&oe=638D597E' alt="" />
-          </div>
-          <h3>Alicia University</h3>
-          <div className='portfolio__item-cta'>
-          <a href="https://github.com/Lawdshev/Alicia-University" className='btn' target='_blank'>Github</a>
-          <a href="https://aliciauniversity.netlify.app" className='btn btn-primary' target='_blank'>Live
-           Demo</a>
-          </div>
-        </article>
-
         <article className='portfolio__item'>
           <div className='portfolio__item-image'>
           <img src='https://scontent.cdninstagram.com/v/t1.15752-9/310141137_606690804476724_2598646718230544017_n.jpg?stp=dst-jpg_s480x480&_nc_cat=110&ccb=1-7&_nc_sid=5a057b&_nc_ohc=2gNbMRuHI9wAX_ZdYHH&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.cdninstagram.com&oh=03_AdRme6OR0gwy-2Bkka3cLLGCvprIo9V3jFll_VYG2LJx1g&oe=638D37C5' alt="" />
           </div>
           <h3>Vidly</h3>
           <div className='portfolio__item-cta'>
-          <a href="https://github.com/Lawdshev/vidlyhttps://github.com/Lawdshev/vidly" className='btn' target='_blank'>Github</a>
+          <a href="https://github.com/rash1234567/Vividly.git" className='btn' target='_blank'>Github</a>
           <a href="vidly-movie-blog.herokuapp.com/" className='btn btn-primary' target='_blank'>Live
            Demo</a>
           </div>
@@ -74,16 +61,14 @@ const portfolio = () => {
           </div>
         </article>
 
-       
-
         <article className='portfolio__item'>
           <div className='portfolio__item-image'>
           <img src={IMG6} alt="" />
           </div>
           <h3>Shevfolio</h3>
           <div className='portfolio__item-cta'>
-          <a href="https://github.com/Lawdshev/shevfolio" className='btn' target='_blank'>Github</a>
-          <a href="https://shevfolio.netlify.app/" className='btn btn-primary' target='_blank'>Live
+          <a href="https://github.com/rash1234567/portfolio" className='btn' target='_blank'>Github</a>
+          <a href="https://rashcodes.netlify.app/" className='btn btn-primary' target='_blank'>Live
            Demo</a>
           </div>
         </article>

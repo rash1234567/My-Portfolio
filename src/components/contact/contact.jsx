@@ -9,15 +9,16 @@ const Contact = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
+
     e.preventDefault();
 
-    emailjs.sendForm('shev', 'template_6srp76u', form.current, 'T8-CYX_mR1oTZ4hng')
+    emailjs.sendForm('service_6oei8o5', 'template_grwvygq', e.target, 'DFa9X1LBu0nzEyvdv')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
           console.log(error.text);
       });
-      e.target.reset()
+      e.target.reset();
   };
 
   return (
@@ -30,15 +31,15 @@ const Contact = () => {
           <article className='contact__option'>
               <MdOutlineMarkEmailRead className='contact__option-icon'/>
               <h4>Email</h4>
-              <h5>o.d.alsherif@gmail.com</h5>
-              <a href="mailto:o.d.alsherif@gmail.com" target="_blank">Send A Message</a>
+              <h5 className='email'>imamrasheedatahmad1993@gmail.com</h5>
+              <a href="mailto:imamrasheedatahmad1993@gmail.com" target="_blank">Send A Message</a>
           </article>
 
           <article className='contact__option'>
               <BsWhatsapp className='contact__option-icon'/>
               <h4>WhatsApp</h4>
-              <h5>+234 8177950542</h5>
-              <a href="https://wa.me/2348177950542" target="_blank">Send A Message</a>
+              <h5>+234 8091408145</h5>
+              <a href="https://wa.me/2348091408145" target="_blank">Send A Message</a>
           </article>
         </div>
         {/* END OF CONTACT OPTIONS */}

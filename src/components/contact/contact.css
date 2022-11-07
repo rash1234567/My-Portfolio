@@ -10,7 +10,9 @@
     flex-direction: column;
     gap: 1.2rem;
 }
-
+.email{
+    text-overflow: ellipsis;
+}
 .contact__option {
     background: var(--color-bg-variant);
     padding: 1.2rem;

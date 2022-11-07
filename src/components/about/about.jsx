@@ -23,7 +23,7 @@ const about = () => {
           <article className='about__card'>
             <BsAward className='about__icon'/>
             <h5>Experience</h5>
-            <small>1+ Years Working</small>
+            <small>1 Year Working</small>
           </article>
 
           <article className='about__card'>
@@ -40,16 +40,11 @@ const about = () => {
         </div>
 
         <p>
-         I am a software engineer with a passion 
-        for developing innovative programs that expedite the 
-        efficiency and effectiveness of organizational success.
-        Motivated web developer looking for a role as 
-        junior dev in reputable organizations. Passionate about 
-        building first-class web applications.
-         I am also a graduate of agricultural engineering in the university of ilorin.
+        I am a software engineer, i enjoy creating things that live on the internet.i build user interfaces I am Passionate about building first-class web applications.
+         I am also a graduate of Food Science from university of ilorin.
         </p>
 
-        <a href="#contact" className='btn btn-primary'>Let's Talk</a>
+        <a href="#contact" className='btn btn-primary'>Contact me </a>
 
       </div>
     </div>

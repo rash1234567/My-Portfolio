@@ -1,7 +1,6 @@
 .experience__container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    grid-template-columns: 1fr;
 }
 
 .experience__container > div {
@@ -10,6 +9,8 @@
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
+    width: 50%;
+    margin: auto;
 }
 
 .experience__container > div:hover {

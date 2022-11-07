@@ -17,7 +17,7 @@ const services = () => {
           <ul className='service__list'>
             <li>
               <BsCheckAll className='service__list-icon'/>
-              <p>LUsing React to createreusable components</p>
+              <p>I use React to create re-usable component</p>
             </li>
             <li>
               <BsCheckAll className='service__list-icon'/>
@@ -33,63 +33,6 @@ const services = () => {
             </li>
           </ul>
         </article>
-        {/*END OF UI/UX*/}
-
-        <article className='service'>
-          <div className='service__head'>
-            <h3>Backend Engineering</h3>
-          </div>
-
-          <ul className='service__list'>
-            <li>
-              <BsCheckAll className='service__list-icon'/>
-              <p>Using Expressjs to create server</p>
-            </li>
-            <li>
-              <BsCheckAll className='service__list-icon'/>
-              <p>Writing reusabe APIs with node and express</p>
-            </li>
-            <li>
-              <BsCheckAll className='service__list-icon'/>
-              <p>Communication with mongodb using mongoose</p>
-            </li>
-            <li>
-              <BsCheckAll className='service__list-icon'/>
-              <p>JWT and Firebase authentication</p>
-            </li>
-            <li>
-              <BsCheckAll className='service__list-icon'/>
-              <p>Using  jOi for validation</p>
-            </li>
-          </ul>
-        </article>
-        {/*END OF WEB DEVELOPMENT*/}
-
-        <article className='service'>
-          <div className='service__head'>
-            <h3>Tutorials</h3>
-          </div>
-
-          <ul className='service__list'>
-            <li>
-              <BsCheckAll className='service__list-icon'/>
-              <p>Teaching the basics of web development</p>
-            </li>
-            <li>
-              <BsCheckAll className='service__list-icon'/>
-              <p>Fundamentals of Javascript</p>
-            </li>
-            <li>
-              <BsCheckAll className='service__list-icon'/>
-              <p>DOM manipulation</p>
-            </li>
-            <li>
-              <BsCheckAll className='service__list-icon'/>
-              <p>ES6 and Reactjs</p>
-            </li>
-          </ul>
-        </article>
-        {/*END OF Content Creation*/}
       </div>
     </section>
   )
