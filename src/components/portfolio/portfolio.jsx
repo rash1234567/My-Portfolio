@@ -65,7 +65,7 @@ const portfolio = () => {
           <div className='portfolio__item-image'>
           <img src={IMG6} alt="" />
           </div>
-          <h3>Shevfolio</h3>
+          <h3>MY PORTFOLIO</h3>
           <div className='portfolio__item-cta'>
           <a href="https://github.com/rash1234567/portfolio" className='btn' target='_blank'>Github</a>
           <a href="https://rashcodes.netlify.app/" className='btn btn-primary' target='_blank'>Live
