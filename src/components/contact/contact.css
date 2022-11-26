@@ -11,7 +11,7 @@
     gap: 1.2rem;
 }
 .email{
-    text-overflow: ellipsis;
+    text-overflow: wrap;
 }
 .contact__option {
     background: var(--color-bg-variant);
