@@ -17,7 +17,7 @@ const services = () => {
           <ul className='service__list'>
             <li>
               <BsCheckAll className='service__list-icon'/>
-              <p>I use React to create re-usable component</p>
+              <p>Using React to create reusable components</p>
             </li>
             <li>
               <BsCheckAll className='service__list-icon'/>
@@ -33,8 +33,8 @@ const services = () => {
             </li>
           </ul>
         </article>
-      </div>
-    </section>
+       </div> 
+    </section>  
   )
 }
 export default services
