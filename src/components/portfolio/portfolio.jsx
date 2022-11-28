@@ -48,19 +48,6 @@ const portfolio = () => {
            Demo</a>
           </div>
         </article>
-
-        <article className='portfolio__item'>
-          <div className='portfolio__item-image'>
-          <img src='https://scontent.cdninstagram.com/v/t1.15752-9/314358616_3224723444507556_2532067514921482232_n.jpg?stp=dst-jpg_s320x320&_nc_cat=109&ccb=1-7&_nc_sid=5a057b&_nc_ohc=NiJegx_9QvAAX8000Rr&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.cdninstagram.com&oh=03_AdQNwzIP-gZuIuDOfZ6uaAa4_bP5UfuGKv4zZ5Izb2eCCw&oe=638D6003' alt="" />
-          </div>
-          <h3>Maykup(big screen only)</h3>
-          <div className='portfolio__item-cta'>
-          <a href="https://github.com/Lawdshev/hafs-landing-page" className='btn' target='_blank'>Github</a>
-          <a href="https://maykup.netlify.app/" className='btn btn-primary' target='_blank'>Live
-           Demo</a>
-          </div>
-        </article>
-
         <article className='portfolio__item'>
           <div className='portfolio__item-image'>
           <img src={IMG6} alt="" />
