@@ -39,17 +39,6 @@ const portfolio = () => {
         </article>
         <article className='portfolio__item'>
           <div className='portfolio__item-image'>
-          <img src='https://scontent.cdninstagram.com/v/t1.15752-9/310141137_606690804476724_2598646718230544017_n.jpg?stp=dst-jpg_s480x480&_nc_cat=110&ccb=1-7&_nc_sid=5a057b&_nc_ohc=2gNbMRuHI9wAX_ZdYHH&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.cdninstagram.com&oh=03_AdRme6OR0gwy-2Bkka3cLLGCvprIo9V3jFll_VYG2LJx1g&oe=638D37C5' alt="" />
-          </div>
-          <h3>Vidly</h3>
-          <div className='portfolio__item-cta'>
-          <a href="https://github.com/rash1234567/Vividly.git" className='btn' target='_blank'>Github</a>
-          <a href="vidly-movie-blog.herokuapp.com/" className='btn btn-primary' target='_blank'>Live
-           Demo</a>
-          </div>
-        </article>
-        <article className='portfolio__item'>
-          <div className='portfolio__item-image'>
           <img src={IMG6} alt="" />
           </div>
           <h3>MY PORTFOLIO</h3>
