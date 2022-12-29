@@ -11,7 +11,7 @@ export const data =[
     },
     {
         title: 'Apple',
-        demo: 'https://majestic-gelato.netlify.app',
+        demo: 'https://majestic-gelato-78453c.netlify.app/',
         github: 'https://github.com/rash1234567/Apple-store.git',
         img: Applestore,
     },
