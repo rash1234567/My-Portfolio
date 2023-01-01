@@ -48,7 +48,7 @@ const portfolio = () => {
           </div>
         </article>
       </div>
-      <div className="w-full flex mt-2"> <Link to='/projects' className='mx-auto text-xl md:text-3xl'>See more <i class="fa-solid fa-right-long"></i></Link></div>
+      <div className="w-full flex mt-2"> <Link to='/projects' className='mx-auto text-xl md:text-3xl'>See more <i className="fa-solid fa-right-long"></i></Link></div>
     </section>
   )
 }
