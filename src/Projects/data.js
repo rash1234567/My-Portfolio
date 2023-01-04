@@ -4,6 +4,8 @@ import shoklin from '../assets/shoklin.png';
 import vatdoc from '../assets/vatdoc.PNG';
 import verifier from '../assets/verifier.PNG';
 import itemify from '../assets/itemify.PNG';
+import realestate from '../assets/realestate.PNG';
+import wikipedia from '../assets/wikipedia.PNG'
 
 export const data = [
     {
@@ -23,6 +25,18 @@ export const data = [
         demo: 'https://vividioz.onrender.com/',
         github: 'https://github.com/rash1234567/NEWVIVIDIO',
         img: vividioz,
+    },
+    {
+        title: 'Wikipedia Clone',
+        demo: 'https://leafy-vacherin-505022.netlify.app/',
+        github: 'https://github.com/rash1234567/wikipedia.git',
+        img: wikipedia,
+    },
+    {
+        title: 'Real Estate Landing Page',
+        demo: 'https://wondrous-axolotl-85031c.netlify.app/',
+        github: 'https://github.com/rash1234567/real-estate.git',
+        img: realestate,
     },
     {
         title: 'Vatdoc',
