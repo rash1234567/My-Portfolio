@@ -40,7 +40,7 @@ export const data = [
     },
     {
         title: 'Verifier',
-        demo: 'https://everifier.netlify.app/',
+        demo: 'https://everifyer.netlify.app/',
         github: 'https://github.com/Lawdshev/Everifyer.git',
         img: verifier,
     },
