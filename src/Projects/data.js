@@ -5,9 +5,16 @@ import vatdoc from '../assets/vatdoc.PNG';
 import verifier from '../assets/verifier.PNG';
 import itemify from '../assets/itemify.PNG';
 import realestate from '../assets/realestate.PNG';
-import wikipedia from '../assets/wikipedia.PNG'
+import wikipedia from '../assets/wikipedia.PNG';
+import wardboard from '../assets/wwwwww.png'
 
 export const data = [
+    {
+        title: 'Wardboard',
+        demo: 'https://coach.wardbord.com/',
+        github: '',
+        img:wardboard,
+    },
     {
         title: 'Shoklin',
         demo: 'https://shoklin.onrender.com',
