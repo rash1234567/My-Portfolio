@@ -1,10 +1,9 @@
 import React from "react";
 import "./portfolio.css";
 import { Link } from "react-router-dom";
-import vividioz from "../../assets/Vividioz.PNG";
-import Applestore from "../../assets/Applestore.png";
-import shoklin from "../../assets/shoklin.png";
-import wardboard from "../../assets/wwwwww.png";
+import wardbord from "../../assets/wwwwww.png";
+import wardbordPlay from '../../assets/Screenshot 2024-10-26 at 12.13.05 PM.png';
+import wardbordApp from '../../assets/Screenshot 2024-10-26 at 12.13.14 PM.png'
 
 const portfolio = () => {
   return (
@@ -14,13 +13,10 @@ const portfolio = () => {
       <div className="container portfolio__container">
         <article className="portfolio__item">
           <div className="portfolio__item-image">
-            <img src={wardboard} />
+            <img src={wardbord} />
           </div>
-          <h3>Wardboard</h3>
-          <div className="portfolio__item-cta flex justify-around">
-            <a href="" className="btn" target="_blank">
-              Github
-            </a>
+          <h3>Wardbord</h3>
+          <div className="portfolio__item-cta flex justify-center items-center">
             <a
               href="https://coach.wardbord.com/"
               className="btn btn-primary"
@@ -30,22 +26,14 @@ const portfolio = () => {
             </a>
           </div>
         </article>
-
         <article className="portfolio__item">
           <div className="portfolio__item-image">
-            <img src={Applestore} />
+            <img src={wardbordPlay} />
           </div>
-          <h3>Apple</h3>
-          <div className="portfolio__item-cta flex justify-around">
+          <h3>Wardbord Athlete App (Ios)</h3>
+          <div className="portfolio__item-cta flex justify-center items-center">
             <a
-              href="https://github.com/rash1234567/Apple-store.git"
-              className="btn"
-              target="_blank"
-            >
-              Github
-            </a>
-            <a
-              href="https://majestic-gelato-78453c.netlify.app/"
+              href="https://apps.apple.com/us/app/wardbord/id1619683329"
               className="btn btn-primary"
               target="_blank"
             >
@@ -53,22 +41,14 @@ const portfolio = () => {
             </a>
           </div>
         </article>
-
         <article className="portfolio__item">
           <div className="portfolio__item-image">
-            <img src={shoklin} />
+            <img src={wardbordApp} />
           </div>
-          <h3>Shoklin</h3>
-          <div className="portfolio__item-cta flex justify-around">
+          <h3>Wardbord Athlete App (Android)</h3>
+          <div className="portfolio__item-cta flex justify-center items-center">
             <a
-              href="https://github.com/rash1234567/shoklin.git"
-              className="btn"
-              target="_blank"
-            >
-              Github
-            </a>
-            <a
-              href="https://shoklin.onrender.com/"
+              href="https://play.google.com/store/apps/details?id=com.wardbord.playerapp&pli=1"
               className="btn btn-primary"
               target="_blank"
             >
@@ -79,7 +59,7 @@ const portfolio = () => {
       </div>
       <div className="w-full flex mt-2">
         {" "}
-        <Link to="/projects" className="mx-auto text-xl md:text-3xl">
+        <Link to="/projects" className="mx-auto text-xl md:text-xl">
           See more <i className="fa-solid fa-right-long"></i>
         </Link>
       </div>
