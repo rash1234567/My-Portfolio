@@ -28,8 +28,7 @@ const about = () => {
         </div>
 
         <p>
-        I am a software engineer, i enjoy creating things that live on the internet.i build user interfaces I am Passionate about building first-class web applications.
-         I am also a graduate of Food Science from university of ilorin.
+        I am a software engineer passionate about creating things that live on the internet. I specialize in building user interfaces and developing first-class web applications that are both engaging and efficient.
         </p>
 
         <a href="#contact" className='btn btn-primary'>Contact me </a>

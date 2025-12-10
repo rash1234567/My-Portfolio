@@ -19,7 +19,9 @@ import accountable from "../assets2/accountable.jpeg";
 import casemanager from "../assets2/casemanager.png";
 import stamp from "../assets2/stamp.png";
 import wardbordPlay from '../assets/Screenshot 2024-10-26 at 12.13.05 PM.png';
-import wardbordApp from '../assets/Screenshot 2024-10-26 at 12.13.14 PM.png'
+import wardbordApp from '../assets/Screenshot 2024-10-26 at 12.13.14 PM.png';
+import hawkeye from "../assets/hawkeye.png";
+import regenlab from "../assets/regenlab.png";
 
 export const data = [
   {
@@ -39,6 +41,18 @@ export const data = [
     demo: "https://play.google.com/store/apps/details?id=com.wardbord.playerapp&pli=1",
     github: "N/A",
     img: wardbordPlay,
+  },
+  {
+    title: "Hawkeye",
+    demo: "https://hawkeyevisiontek.com/",
+    github: "N/A",
+    img: hawkeye,
+  },
+  {
+    title: "Regenlab",
+    demo: "https://regenlabs.com/",
+    github: "N/A",
+    img: regenlab,
   },
   {
     title: "Accountable",
