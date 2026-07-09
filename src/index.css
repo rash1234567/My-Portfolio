@@ -75,6 +75,14 @@
     --radius-sm: 0.75rem;
     --radius-md: 1rem;
     --radius-lg: 1.5rem;
+
+    /* Body text scale — headers & buttons unchanged */
+    --text-body: 1.0625rem;
+    --text-body-lg: 1.1875rem;
+    --text-body-md: 1rem;
+    --text-body-sm: 0.9375rem;
+    --text-chip: 0.9375rem;
+    --text-caption: 0.9rem;
 }
 
 html {
@@ -96,9 +104,10 @@ html {
 
 body {
     font-family: var(--font-body);
+    font-size: var(--text-body);
     background: var(--color-bg);
     color: var(--color-white);
-    line-height: 1.7;
+    line-height: 1.75;
     background-image:
         radial-gradient(ellipse 80% 50% at 50% -20%, var(--color-body-gradient-1), transparent),
         radial-gradient(ellipse 60% 40% at 100% 50%, var(--color-body-gradient-2), transparent);
@@ -242,5 +251,17 @@ img {
 
     .section__header {
         margin-bottom: 2.5rem;
+    }
+}
+
+/* Slightly larger body text on laptop & desktop */
+@media screen and (min-width: 1024px) {
+    :root {
+        --text-body: 1.125rem;
+        --text-body-lg: 1.25rem;
+        --text-body-md: 1.0625rem;
+        --text-body-sm: 1rem;
+        --text-chip: 1rem;
+        --text-caption: 0.9375rem;
     }
 }

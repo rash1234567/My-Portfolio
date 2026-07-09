@@ -60,22 +60,22 @@
 .contact__card--whatsapp .contact__card-icon { color: #25d366; }
 
 .contact__card h4 {
-    font-size: 1rem;
+    font-size: 1.0625rem;
     color: var(--color-white);
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.5rem;
 }
 
 .contact__detail {
-    font-size: 0.82rem;
+    font-size: var(--text-body-sm);
     color: var(--color-light);
     margin-bottom: 1rem;
-    line-height: 1.5;
+    line-height: 1.6;
     word-break: break-word;
     flex: 1;
 }
 
 .contact__action {
-    font-size: 0.8rem;
+    font-size: var(--text-caption);
     font-weight: 600;
     color: var(--color-primary);
     transition: var(--transition);

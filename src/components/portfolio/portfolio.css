@@ -71,21 +71,22 @@
 
 .portfolio__item-tag {
     display: inline-block;
-    font-size: 0.7rem;
+    font-size: var(--text-caption);
     font-weight: 600;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--color-accent);
     background: var(--color-accent-variant);
-    padding: 0.2rem 0.6rem;
+    padding: 0.25rem 0.65rem;
     border-radius: 2rem;
     margin-bottom: 0.5rem;
 }
 
 .portfolio__item h3 {
-    font-size: 1rem;
+    font-size: 1.0625rem;
     color: var(--color-white);
     font-weight: 600;
+    line-height: 1.4;
 }
 
 .portfolio__more {

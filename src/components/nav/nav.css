@@ -47,7 +47,7 @@
     padding: 0.45rem 0.85rem;
     border-radius: var(--radius-sm);
     color: var(--color-light);
-    font-size: 0.875rem;
+    font-size: var(--text-body-sm);
     font-weight: 500;
     transition: var(--transition);
     white-space: nowrap;

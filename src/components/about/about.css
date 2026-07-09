@@ -56,15 +56,15 @@
 }
 
 .about__card small {
-    font-size: 0.8rem;
+    font-size: var(--text-body-sm);
     color: var(--color-light);
 }
 
 .about__content p {
     margin-bottom: 2rem;
     color: var(--color-light);
-    font-size: 1.05rem;
-    line-height: 1.8;
+    font-size: var(--text-body-lg);
+    line-height: 1.85;
 }
 
 /*============== MEDIA QUERIES (MEDIUM DEVICES) ============*/

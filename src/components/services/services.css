@@ -52,15 +52,15 @@
 
 .service__list-icon {
     color: var(--color-accent);
-    margin-top: 4px;
+    margin-top: 5px;
     flex-shrink: 0;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .service__list p {
-    font-size: 0.9rem;
+    font-size: var(--text-body-md);
     color: var(--color-light);
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 /*============== MEDIA QUERIES (SMALL DEVICES) ============*/
