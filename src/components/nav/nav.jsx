@@ -3,15 +3,15 @@ import { Link, useLocation } from 'react-router-dom'
 import "./nav.css"
 import { HiMenu, HiX, HiDownload, HiSun, HiMoon } from 'react-icons/hi'
 import { useTheme } from '../../context/ThemeContext'
-import CV from '../../assets/RASHEEDAH CV.pdf'
+import Resume from '../../assets/RasheedatResume.pdf'
 
 const navLinks = [
-  { href: '/#home', label: 'Home', hash: '#home' },
-  { href: '/#about', label: 'About', hash: '#about' },
-  { href: '/projects', label: 'Projects', hash: null },
-  { href: '/#experience', label: 'Skills', hash: '#experience' },
-  { href: '/#services', label: 'Experience', hash: '#services' },
-  { href: '/#contact', label: 'Contact', hash: '#contact' },
+  { href: '/#home', label: 'Home' },
+  { href: '/#about', label: 'About' },
+  { href: '/#experience', label: 'Technologies' },
+  { href: '/projects', label: 'Projects' },
+  { href: '/#services', label: 'Experience' },
+  { href: '/#contact', label: 'Contact' },
 ]
 
 const Nav = () => {
@@ -71,7 +71,7 @@ const Nav = () => {
             <button className="nav__theme-btn" onClick={toggleTheme} aria-label="Toggle theme">
               {theme === 'dark' ? <HiSun /> : <HiMoon />}
             </button>
-            <a href={CV} download className="nav__resume">
+            <a href={Resume} download="RasheedatResume.pdf" className="nav__resume">
               <HiDownload />
               Download Resume
             </a>
@@ -82,7 +82,7 @@ const Nav = () => {
           <button className="nav__theme-btn" onClick={toggleTheme} aria-label="Toggle theme">
             {theme === 'dark' ? <HiSun /> : <HiMoon />}
           </button>
-          <a href={CV} download className="nav__resume">
+          <a href={Resume} download="RasheedatResume.pdf" className="nav__resume">
             <HiDownload />
             <span>Download Resume</span>
           </a>

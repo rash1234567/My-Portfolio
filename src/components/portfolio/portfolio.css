@@ -30,7 +30,7 @@
 .portfolio__item-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(8, 12, 20, 0.7);
+    background: var(--color-overlay);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,7 +61,7 @@
 }
 
 .portfolio__item-link:hover {
-    background: #ff8266;
+    background: var(--color-primary-hover);
     color: #fff !important;
 }
 

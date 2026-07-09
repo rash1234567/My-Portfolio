@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { HiArrowLeft } from 'react-icons/hi';
 import Project from './project';
 import { data } from './data';
+import '../components/portfolio/portfolio.css';
 import './projects.css';
 
 function Projects() {
@@ -18,7 +19,7 @@ function Projects() {
           <span className="projects-page__count">{data.length} projects</span>
         </div>
 
-        <div className="projects-grid">
+        <div className="portfolio__container">
           {data.map((datum) => (
             <Project key={datum.title + datum.demo} {...datum} />
           ))}

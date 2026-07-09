@@ -3,20 +3,21 @@ import "./experience.css";
 import { BsPatchCheckFill } from "react-icons/bs";
 
 const frontendSkills = [
-  "HTML", "CSS", "Javascript", "React", "React Native",
-  "Bootstrap", "Tailwind", "Shopify Themes / Polaris"
+  "React", "React Native", "JavaScript", "TypeScript",
+  "HTML & CSS", "Tailwind CSS", "Bootstrap", "Shopify Polaris",
 ];
 
 const backendSkills = [
-  "Nodejs", "Expressjs", "MongoDB", "PostgreSQL", "Shopify App Development"
+  "Node.js", "Express.js", "MongoDB", "PostgreSQL",
+  "REST APIs", "Shopify Apps", "Git",
 ];
 
 const Experience = () => {
   return (
     <section id="experience">
       <div className="section__header">
-        <span className="section__label">Skills</span>
-        <h2 className="section__title">What I work with</h2>
+        <span className="section__label">Technologies</span>
+        <h2 className="section__title">Technologies I work with</h2>
       </div>
 
       <div className="container experience__container">

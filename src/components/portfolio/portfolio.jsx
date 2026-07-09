@@ -1,7 +1,7 @@
 import React from "react";
 import "./portfolio.css";
 import { Link } from "react-router-dom";
-import { HiOutlineExternalLink } from "react-icons/hi";
+import ProjectCard from "./ProjectCard";
 import wardbord from "../../assets/wwwwww.png";
 import wardbordPlay from '../../assets/Screenshot 2024-10-26 at 12.13.05 PM.png';
 import wardbordApp from '../../assets/Screenshot 2024-10-26 at 12.13.14 PM.png'
@@ -37,26 +37,7 @@ const portfolio = () => {
 
       <div className="container portfolio__container">
         {projects.map((project) => (
-          <article key={project.link} className="portfolio__item card">
-            <div className="portfolio__item-image">
-              <img src={project.image} alt={project.title} />
-              <div className="portfolio__item-overlay">
-                <a
-                  href={project.link}
-                  className="portfolio__item-link"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <HiOutlineExternalLink />
-                  View Live
-                </a>
-              </div>
-            </div>
-            <div className="portfolio__item-info">
-              <span className="portfolio__item-tag">{project.tag}</span>
-              <h3>{project.title}</h3>
-            </div>
-          </article>
+          <ProjectCard key={project.link} {...project} />
         ))}
       </div>
 

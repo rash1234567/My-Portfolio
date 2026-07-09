@@ -1,117 +1,104 @@
 .contact__container {
     display: grid;
-    grid-template-columns: 1fr 1.6fr;
-    gap: 3rem;
-    max-width: 960px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
-.contact__options {
+.contact__card {
+    padding: 1.75rem 1.5rem;
+    text-align: left;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    color: inherit;
+    cursor: pointer;
 }
 
-.contact__option {
-    padding: 1.5rem;
-    text-align: left;
-    cursor: default;
+.contact__card:hover {
+    color: inherit;
 }
 
-.contact__option-icon-wrap {
-    width: 2.5rem;
-    height: 2.5rem;
+.contact__card-icon-wrap {
+    width: 2.75rem;
+    height: 2.75rem;
     border-radius: var(--radius-sm);
-    background: var(--color-primary-variant);
-    border: 1px solid rgba(255, 107, 74, 0.25);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1rem;
-}
-
-.contact__option-icon-wrap--accent {
-    background: var(--color-accent-variant);
-    border-color: rgba(0, 212, 170, 0.25);
-}
-
-.contact__option-icon {
-    font-size: 1.2rem;
-    color: var(--color-primary);
-}
-
-.contact__option-icon-wrap--accent .contact__option-icon {
-    color: var(--color-accent);
-}
-
-.contact__option h4 {
-    font-size: 1rem;
-    color: var(--color-white);
-    margin-bottom: 0.35rem;
-}
-
-.contact__detail {
-    font-size: 0.85rem;
-    color: var(--color-light);
-    margin-bottom: 0.75rem;
-    word-break: break-all;
-}
-
-.contact__option a {
-    font-size: 0.85rem;
-    font-weight: 500;
-}
-
-/*=================== FORM ==================*/
-.contact__form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.contact__form input,
-.contact__form textarea {
-    width: 100%;
-    padding: 1.1rem 1.25rem;
-    border-radius: var(--radius-sm);
-    background: var(--color-bg-variant);
-    border: 1px solid var(--color-border);
-    resize: none;
-    color: var(--color-white);
-    font-family: var(--font-body);
-    font-size: 0.9rem;
+    margin-bottom: 1.25rem;
     transition: var(--transition);
 }
 
-.contact__form input::placeholder,
-.contact__form textarea::placeholder {
-    color: var(--color-light);
+.contact__card--linkedin .contact__card-icon-wrap {
+    background: rgba(10, 102, 194, 0.12);
+    border: 1px solid rgba(10, 102, 194, 0.25);
 }
 
-.contact__form input:focus,
-.contact__form textarea:focus {
-    border-color: var(--color-border-hover);
-    background: var(--color-surface-hover);
-    outline: none;
+.contact__card--github .contact__card-icon-wrap {
+    background: var(--color-bg-variant);
+    border: 1px solid var(--color-border);
+}
+
+.contact__card--email .contact__card-icon-wrap {
+    background: var(--color-primary-variant);
+    border: 1px solid rgba(255, 107, 74, 0.25);
+}
+
+.contact__card--whatsapp .contact__card-icon-wrap {
+    background: rgba(37, 211, 102, 0.12);
+    border: 1px solid rgba(37, 211, 102, 0.25);
+}
+
+.contact__card-icon {
+    font-size: 1.3rem;
+}
+
+.contact__card--linkedin .contact__card-icon { color: #0a66c2; }
+.contact__card--github .contact__card-icon { color: var(--color-white); }
+.contact__card--email .contact__card-icon { color: var(--color-primary); }
+.contact__card--whatsapp .contact__card-icon { color: #25d366; }
+
+.contact__card h4 {
+    font-size: 1rem;
+    color: var(--color-white);
+    margin-bottom: 0.4rem;
+}
+
+.contact__detail {
+    font-size: 0.82rem;
+    color: var(--color-light);
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    word-break: break-word;
+    flex: 1;
+}
+
+.contact__action {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    transition: var(--transition);
+}
+
+.contact__card:hover .contact__action {
+    color: var(--color-accent);
 }
 
 /*============== MEDIA QUERIES (MEDIUM DEVICES) ============*/
 @media screen and (max-width: 1024px) {
     .contact__container {
-        grid-template-columns: 1fr;
-        gap: 2rem;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 /*============== MEDIA QUERIES (SMALL DEVICES) ============*/
 @media screen and (max-width: 600px) {
-    .contact__options {
-        flex-direction: row;
-        flex-wrap: wrap;
+    .contact__container {
+        grid-template-columns: 1fr;
     }
 
-    .contact__option {
-        flex: 1;
-        min-width: 140px;
+    .contact__card {
+        padding: 1.5rem;
     }
 }
