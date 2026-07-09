@@ -6,20 +6,32 @@ import HeaderSocials from './HeaderSocials'
 
 const header = () => {
   return (
-    <header>
+    <header id="home">
       <div className="container header__container">
-        <h4>Hello, I am </h4>
-        <h1> Imam Rasheedat</h1>
-        <h4 className='text-light'>A web developer</h4>
-        <CTA />
-        <HeaderSocials/>
-
-        <div className="me">
-          <img src={ME} alt="me" />
+        <div className="header__content">
+          <p className="header__greeting">Hello, I'm</p>
+          <h1>Imam Rasheedat</h1>
+          <p className="header__role">
+            I build <span className="header__highlight">web & mobile</span> products
+            that people actually use.
+          </p>
+          <CTA />
+          <HeaderSocials />
         </div>
 
-        <a href="#contact" className='scroll__down'>Scroll Down</a>
+        <div className="header__visual">
+          <div className="header__image-wrapper">
+            <img src={ME} alt="Imam Rasheedat" />
+          </div>
+          <div className="header__badge header__badge--top">React & React Native</div>
+          <div className="header__badge header__badge--bottom">Full-Stack Developer</div>
+        </div>
       </div>
+
+      <a href="#about" className="scroll__down">
+        <span>Explore</span>
+        <div className="scroll__line"></div>
+      </a>
     </header>
   )
 }

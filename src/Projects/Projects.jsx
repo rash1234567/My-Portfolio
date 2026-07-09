@@ -1,23 +1,31 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import { HiArrowLeft } from 'react-icons/hi';
 import Project from './project';
-import {data} from './data'
+import { data } from './data';
+import './projects.css';
 
 function Projects() {
   return (
-    <div>
-        <div className="w-[65%] md:w-[60%] flex items-center justify-between mt-2">
-            <Link to='/'><i className="fa-regular fa-circle-left text-2xl ml-2"></i></Link>
-            <h1 className="text-center text-2xl md:text-2xl">My Projects</h1>
+    <div className="projects-page">
+      <div className="container">
+        <div className="projects-page__header">
+          <Link to="/" className="projects-page__back">
+            <HiArrowLeft />
+            Back to home
+          </Link>
+          <h1 className="projects-page__title">All Projects</h1>
+          <span className="projects-page__count">{data.length} projects</span>
         </div>
-        <div className="flex-wrap flex items-start p-4">
-            {
-                data.map(datum=> {
-                   return <Project {...datum}/>
-                })
-            }
+
+        <div className="projects-grid">
+          {data.map((datum) => (
+            <Project key={datum.title + datum.demo} {...datum} />
+          ))}
         </div>
+      </div>
     </div>
-  )
+  );
 }
-export default Projects
+
+export default Projects;

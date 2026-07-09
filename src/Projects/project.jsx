@@ -1,18 +1,34 @@
 import React from "react";
+import { HiOutlineExternalLink } from "react-icons/hi";
+import { FaGithub } from "react-icons/fa";
 
 function Project({ img, title, github, demo }) {
+  const hasGithub = github && github !== "N/A";
+
   return (
-    <article className="portfolio__item mt-4 lg:ml-10 md:mx-auto">
-      <div className="portfolio__item-image md:w-[500px] lg:w-[350px] md:max-h-[230px] max-h-[180px] lg:max-h-[180px] overflow-hidden">
-        <img src={img} alt="" />
+    <article className="projects-card card">
+      <div className="projects-card__image">
+        <img src={img} alt={title} loading="lazy" />
       </div>
-      <h3 className="font-bold">{title}</h3>
-      <div className="portfolio__item-cta flex items-center justify-center">
-        <a href={demo} className="btn btn-primary" target="_blank">
-          Live Demo
-        </a>
+      <div className="projects-card__body">
+        <h3>{title}</h3>
+        <div className="projects-card__actions">
+          {demo && (
+            <a href={demo} className="btn-demo" target="_blank" rel="noreferrer">
+              <HiOutlineExternalLink />
+              Live Demo
+            </a>
+          )}
+          {hasGithub && (
+            <a href={github} className="btn-github" target="_blank" rel="noreferrer">
+              <FaGithub />
+              Code
+            </a>
+          )}
+        </div>
       </div>
     </article>
   );
 }
+
 export default Project;

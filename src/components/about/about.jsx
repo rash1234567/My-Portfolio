@@ -1,15 +1,20 @@
 import React from 'react'
 import "./about.css"
 import ME from '../../assets/me-about.jpg'
-import {BsAward} from 'react-icons/bs'
-import {FiUsers} from 'react-icons/fi'
 import {VscFolderLibrary} from 'react-icons/vsc'
+import {BsCodeSlash} from 'react-icons/bs'
+import {HiOutlineLightningBolt} from 'react-icons/hi'
+import { getYearsExperience } from '../../utils/experience'
 
 const about = () => {
+  const yearsExp = getYearsExperience()
+
   return (
     <section id='about'>
-      <h5>Get To Know</h5>
-      <h2>About Me</h2>
+      <div className="section__header">
+        <span className="section__label">About</span>
+        <h2 className="section__title">A bit about me</h2>
+      </div>
 
       <div className='container about__container'>
         <div className='about__me'>
@@ -18,23 +23,34 @@ const about = () => {
           </div>
         </div>
 
-      <div className="about__content">
-        <div className='about__cards'>
-          <article className='about__card'>
-            <VscFolderLibrary className='about__icon'/>
-            <h5>Projects</h5>
-            <small>few Completed</small>
-          </article>
+        <div className="about__content">
+          <div className='about__cards'>
+            <article className='about__card card'>
+              <VscFolderLibrary className='about__icon'/>
+              <h5>20+</h5>
+              <small>Projects Built</small>
+            </article>
+            <article className='about__card card'>
+              <BsCodeSlash className='about__icon'/>
+              <h5>15+</h5>
+              <small>Technologies</small>
+            </article>
+            <article className='about__card card'>
+              <HiOutlineLightningBolt className='about__icon'/>
+              <h5>{yearsExp}</h5>
+              <small>Years Experience</small>
+            </article>
+          </div>
+
+          <p>
+            I'm a software engineer who loves turning ideas into polished digital experiences.
+            From athlete performance apps at Wardbord to full-stack web platforms, I focus on
+            building products that are fast, intuitive, and built to last.
+          </p>
+
+          <a href="#contact" className='btn btn-primary'>Let's work together</a>
         </div>
-
-        <p>
-        I am a software engineer passionate about creating things that live on the internet. I specialize in building user interfaces and developing first-class web applications that are both engaging and efficient.
-        </p>
-
-        <a href="#contact" className='btn btn-primary'>Contact me </a>
-
       </div>
-    </div>
     </section>
   )
 }

@@ -2,102 +2,51 @@ import React from "react";
 import "./experience.css";
 import { BsPatchCheckFill } from "react-icons/bs";
 
+const frontendSkills = [
+  "HTML", "CSS", "Javascript", "React", "React Native",
+  "Bootstrap", "Tailwind", "Shopify Themes / Polaris"
+];
+
+const backendSkills = [
+  "Nodejs", "Expressjs", "MongoDB", "PostgreSQL", "Shopify App Development"
+];
+
 const Experience = () => {
   return (
     <section id="experience">
-      <h5>What Skills I Have</h5>
-      <h2>My Experience</h2>
+      <div className="section__header">
+        <span className="section__label">Skills</span>
+        <h2 className="section__title">What I work with</h2>
+      </div>
 
       <div className="container experience__container">
-        {/* Frontend Development */}
-        <div className="experience__frontend">
-          <h3>Frontend Development</h3>
-          <div className="experience__content">
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icons" />
-              <div>
-                <h4>HTML</h4>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icons" />
-              <div>
-                <h4>CSS</h4>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icons" />
-              <div>
-                <h4>Javascript</h4>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icons" />
-              <div>
-                <h4>React</h4>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icons" />
-              <div>
-                <h4>React Native</h4>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icons" />
-              <div>
-                <h4>Bootstrap</h4>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icons" />
-              <div>
-                <h4>Tailwind</h4>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icons" />
-              <div>
-                <h4>Shopify Themes / Polaris</h4>
-              </div>
-            </article>
+        <div className="experience__panel card">
+          <div className="experience__panel-header">
+            <span className="experience__dot experience__dot--frontend"></span>
+            <h3>Frontend</h3>
+          </div>
+          <div className="experience__skills">
+            {frontendSkills.map((skill) => (
+              <span key={skill} className="experience__skill">
+                <BsPatchCheckFill className="experience__skill-icon" />
+                {skill}
+              </span>
+            ))}
           </div>
         </div>
 
-        {/* Backend Development */}
-        <div className="experience__backend">
-          <h3>Backend Development</h3>
-          <div className="experience__content">
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icons" />
-              <div>
-                <h4>Nodejs</h4>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icons" />
-              <div>
-                <h4>Expressjs</h4>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icons" />
-              <div>
-                <h4>MongoDB</h4>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icons" />
-              <div>
-                <h4>PostgreSQL</h4>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icons" />
-              <div>
-                <h4>Shopify App Development</h4>
-              </div>
-            </article>
+        <div className="experience__panel card">
+          <div className="experience__panel-header">
+            <span className="experience__dot experience__dot--backend"></span>
+            <h3>Backend</h3>
+          </div>
+          <div className="experience__skills">
+            {backendSkills.map((skill) => (
+              <span key={skill} className="experience__skill">
+                <BsPatchCheckFill className="experience__skill-icon" />
+                {skill}
+              </span>
+            ))}
           </div>
         </div>
       </div>
